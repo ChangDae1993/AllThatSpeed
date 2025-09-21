@@ -499,7 +499,7 @@ Transform:
   m_GameObject: {fileID: 801453606}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1043.9717, y: 107.48773, z: -1.237387}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -521,6 +521,7 @@ MonoBehaviour:
   skipText: {fileID: 523464596}
   holdTime: 3
   drainSpeed: 2
+  autoProceedDelay: 5
   nextScene: MainMenu
 --- !u!1 &913801399
 GameObject:
