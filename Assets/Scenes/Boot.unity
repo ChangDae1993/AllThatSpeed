@@ -284,7 +284,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 993b7f256a7cb544599885a883fba277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  systemPrefabs: []
+  systemPrefabs:
+  - {fileID: 5488934143665575190, guid: 782fafd39532d054fb6b8e85db5fdb57, type: 3}
+  - {fileID: 3128262755573889010, guid: 372d80595363d664ca42d49b0d45a027, type: 3}
+  - {fileID: 1006381142085419147, guid: 1d2d385ea5af8f548a86f55f2c5ff084, type: 3}
   nextScene: Intro
 --- !u!1 &2047838049
 GameObject:

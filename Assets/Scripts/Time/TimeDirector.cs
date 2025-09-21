@@ -5,6 +5,8 @@ public enum TimeLayerType { Global, Player, Enemy, Projectile, UI }
 
 [DisallowMultipleComponent]
 [AddComponentMenu("Time System/Time Director")]
+[DefaultExecutionOrder(-500)]
+
 public sealed class TimeDirector : MonoBehaviour
 {
     public static TimeDirector I { get; private set; }
