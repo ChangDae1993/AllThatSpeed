@@ -1,7 +1,16 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SaveSystem : MonoBehaviour
 {
+    public static SaveSystem I { get; private set; }
+
+    void Awake()
+    {
+        if (I != null && I != this) { Destroy(gameObject); return; }
+        I = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
