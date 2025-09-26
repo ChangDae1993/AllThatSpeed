@@ -9,7 +9,11 @@ public enum TimeLayerType { Global, Player, Enemy, Projectile, UI }
 
 public sealed class TimeDirector : MonoBehaviour
 {
-    public static TimeDirector I { get; private set; }
+    public static TimeDirector I 
+    { 
+        get; 
+        private set; 
+    }
 
     [Header("Global Time Settings")]
     [Tooltip("게임 전체 기본 시간 배율(느린 상태).")]

@@ -19,6 +19,7 @@ public sealed class Bootstrapper : MonoBehaviour
 
             // 프리팹 루트에 붙은 첫 번째 MonoBehaviour 타입으로 체크
             var mb = prefab.GetComponent<MonoBehaviour>();
+
             if (mb == null)
             {
                 // (루트에 스크립트가 없으면 이름 체크로 폴백)

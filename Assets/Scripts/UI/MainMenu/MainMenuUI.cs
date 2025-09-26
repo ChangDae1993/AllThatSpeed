@@ -10,11 +10,13 @@ public class MainMenuUI : MonoBehaviour
     {
         SceneManager.LoadScene(gameplayScene);
     }
+
     public void OnOptions()
     {
         if (optionsPanel != null)
             optionsPanel.SetActive(true);
     }
+
     public void OnQuit()
     {
 #if UNITY_EDITOR

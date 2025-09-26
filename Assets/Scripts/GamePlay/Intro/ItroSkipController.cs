@@ -32,13 +32,17 @@ public class IntroSkipController : MonoBehaviour
 
         // ⬇︎ 홀드 게이지 로직
         bool holding = Input.anyKey;
-        if (holding) currentTime += Time.unscaledDeltaTime;
-        else currentTime -= Time.unscaledDeltaTime * drainSpeed;
+
+        if (holding) 
+            currentTime += Time.unscaledDeltaTime;
+        else 
+            currentTime -= Time.unscaledDeltaTime * drainSpeed;
 
         currentTime = Mathf.Clamp(currentTime, 0f, holdTime);
 
         // UI 반영
-        if (skipFillImage) skipFillImage.fillAmount = currentTime / holdTime;
+        if (skipFillImage) 
+            skipFillImage.fillAmount = currentTime / holdTime;
 
         if (skipText)
         {

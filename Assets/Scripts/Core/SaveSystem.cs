@@ -2,7 +2,11 @@
 
 public class SaveSystem : MonoBehaviour
 {
-    public static SaveSystem I { get; private set; }
+    public static SaveSystem I 
+    { 
+        get; 
+        private set; 
+    }
 
     void Awake()
     {

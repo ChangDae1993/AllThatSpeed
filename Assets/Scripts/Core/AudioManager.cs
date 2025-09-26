@@ -2,7 +2,11 @@
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager I { get; private set; }
+    public static AudioManager I 
+    { 
+        get; 
+        private set; 
+    }
     void Awake()
     {
         if (I != null && I != this) { Destroy(gameObject); return; }
