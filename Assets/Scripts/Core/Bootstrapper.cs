@@ -38,7 +38,6 @@ public sealed class Bootstrapper : MonoBehaviour
                 Instantiate(prefab); // 각 시스템 프리팹은 내부에서 DontDestroyOnLoad + 싱글턴 보장
             }
         }
-
         Application.targetFrameRate = 60;
         QualitySettings.vSyncCount = 0;
     }
